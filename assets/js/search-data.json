@@ -4,9 +4,9 @@
         "post0": {
             "title": "Coloriza Brasil Fastpages Notebook",
             "content": ". Essa rede neural colore fotos . from deoldify_wrapper import DeOldify . Importing Libraries No module named &#39;deoldify&#39; DeOldify not found, installing.. Cloning DeOldify Repository... Opening DeOldify Folder Importing Libraries . /content/deoldify_wrapper.py:36: UserWarning: WARNING: GPU not available. Activate it on Colab at Edit &gt; Notebook Settings warnings.warn(&#39;WARNING: GPU not available. Activate it on Colab at Edit &gt; Notebook Settings&#39;) . Installing Colab requirements... Importing DeOldify Visualize module and FastAI Downloading Colorizer Model . Coloriza&#231;&#227;o de Imagem do jogador do S&#227;o Paulo Gerson . url =&#39;https://i.pinimg.com/564x/d9/05/40/d90540d704039a35dac06d5beb723216.jpg&#39; .",
-            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/04/11/C%C3%B3pia_de_2022_03_28_Coloriza.html",
-            "relUrl": "/fastpages/jupyter/2022/04/11/C%C3%B3pia_de_2022_03_28_Coloriza.html",
-            "date": " • Apr 11, 2022"
+            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/04/14/C%C3%B3pia_de_2022_03_28_Coloriza.html",
+            "relUrl": "/fastpages/jupyter/2022/04/14/C%C3%B3pia_de_2022_03_28_Coloriza.html",
+            "date": " • Apr 14, 2022"
         }
         
     
