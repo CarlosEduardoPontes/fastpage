@@ -4,9 +4,9 @@
         "post0": {
             "title": "Coloriza Brasil Fastpages Notebook",
             "content": ". Essa rede neural colore fotos . from deoldify_wrapper import DeOldify . Importing Libraries No module named &#39;deoldify&#39; DeOldify not found, installing.. Cloning DeOldify Repository... Opening DeOldify Folder Importing Libraries . /content/deoldify_wrapper.py:36: UserWarning: WARNING: GPU not available. Activate it on Colab at Edit &gt; Notebook Settings warnings.warn(&#39;WARNING: GPU not available. Activate it on Colab at Edit &gt; Notebook Settings&#39;) . Installing Colab requirements... Importing DeOldify Visualize module and FastAI Downloading Colorizer Model . deo = DeOldify() . Initializing Colorizer . /usr/local/lib/python3.7/dist-packages/fastai/data_block.py:442: UserWarning: Your training set is empty. If this is by design, pass `ignore_empty=True` to remove this warning. warn(&#34;Your training set is empty. If this is by design, pass `ignore_empty=True` to remove this warning.&#34;) /usr/local/lib/python3.7/dist-packages/fastai/data_block.py:445: UserWarning: Your validation set is empty. If this is by design, use `split_none()` or pass `ignore_empty=True` when labelling to remove this warning. or pass `ignore_empty=True` when labelling to remove this warning.&#34;&#34;&#34;) /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary. cpuset_checked)) Downloading: &#34;https://download.pytorch.org/models/resnet101-63fe2227.pth&#34; to /root/.cache/torch/hub/checkpoints/resnet101-63fe2227.pth . Done! . Coloriza&#231;&#227;o de Imagem do jogador do S&#227;o Paulo Gerson . url =&#39;https://www.superprof.com.br/blog/wp-content/uploads/2018/05/olho-pb.jpg&#39; . deo.colorize(url, render_factor=10) .",
-            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/04/15/_Coloriza.html",
-            "relUrl": "/fastpages/jupyter/2022/04/15/_Coloriza.html",
-            "date": " • Apr 15, 2022"
+            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/07/01/_Coloriza.html",
+            "relUrl": "/fastpages/jupyter/2022/07/01/_Coloriza.html",
+            "date": " • Jul 1, 2022"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Coloriza Brasil Fastpages Notebook",
             "content": ". Essa rede neural colore fotos . from deoldify_wrapper import DeOldify . Importing Libraries No module named &#39;deoldify&#39; DeOldify not found, installing.. Cloning DeOldify Repository... Opening DeOldify Folder Importing Libraries . /content/deoldify_wrapper.py:36: UserWarning: WARNING: GPU not available. Activate it on Colab at Edit &gt; Notebook Settings warnings.warn(&#39;WARNING: GPU not available. Activate it on Colab at Edit &gt; Notebook Settings&#39;) . Installing Colab requirements... Importing DeOldify Visualize module and FastAI Downloading Colorizer Model . Coloriza&#231;&#227;o de Imagem do jogador do S&#227;o Paulo Gerson . url =&#39;https://i.pinimg.com/564x/d9/05/40/d90540d704039a35dac06d5beb723216.jpg&#39; .",
-            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/04/15/C%C3%B3pia_de_2022_03_28_Coloriza.html",
-            "relUrl": "/fastpages/jupyter/2022/04/15/C%C3%B3pia_de_2022_03_28_Coloriza.html",
-            "date": " • Apr 15, 2022"
+            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/07/01/C%C3%B3pia_de_2022_03_28_Coloriza.html",
+            "relUrl": "/fastpages/jupyter/2022/07/01/C%C3%B3pia_de_2022_03_28_Coloriza.html",
+            "date": " • Jul 1, 2022"
         }
         
     
@@ -26,9 +26,9 @@
         ,"post2": {
             "title": "Automação em Python",
             "content": "Essa Programação desenvolvida em Python automatiza processos. . Neste caso específico será acessado o google drive de uma pessoa, mas pode ser um sistema qualquer, basta desenvolver mais essa aplicação, e um download de um arquivo será feito. . Em seguida haverá um tratamento de dados com o uso da biblioteca Pandas para realizar alguns cálculos. . Por fim será enviado um email com esses dados coletados. . !pip install pyautogui !pip install pyperclip . import pyautogui import pyperclip import time #Delay para iniciar o processo pyautogui.PAUSE = 2 #Inicio da Automação pyautogui.press(&quot;win&quot;) pyautogui.write(&quot;edge&quot;) pyautogui.press(&quot;enter&quot;) #Acessa o google drive ou um sistema pyperclip.copy(&quot;https://docs.google.com/spreadsheets/d/1MBdiXVFBAWHnpYfVZmR4yuEPb_1M77BmTTqtuoYlCiA/edit?resourcekey=0-xVMksOgVXG8IAwA_vuxSTg#gid=653912415&quot;) pyautogui.hotkey(&quot;ctrl&quot;,&quot;v&quot;) pyautogui.press(&quot;enter&quot;) #Aguarda carregar o sistema time.sleep(5) #inicia o processo de Download pyautogui.click(x=106, y=119) pyautogui.click(x=184, y=366) pyautogui.click(x=436, y=371) #esperar o download acabar, quanto maior o arquivo, maior o tempo de espera time.sleep(4) . import pandas as pd #abrir o arquivo que foi feito o download e tratar os dados tabela = pd.read_excel(r&#39;C: Users cedua Downloads Cópia de Exercício aula banco de dados.xlsx&#39;) display(tabela) TotalVendido = tabela[&quot;unidades vendidas&quot;].sum() TotalSabores = tabela[&quot;sabores&quot;].unique() display(TotalVendido) display(TotalSabores) . . pyautogui.hotkey(&quot;ctrl&quot;,&quot;t&quot;) pyperclip.copy(&quot;https://mail.google.com/mail/u/0/#inbox&quot;) pyautogui.hotkey(&quot;ctrl&quot;,&quot;v&quot;) pyautogui.press(&quot;enter&quot;) time.sleep(4) #Clicar no botão Escrever do Gmail pyautogui.click(x=102, y=170) #preencher o destinatário que vai receber o relatório pyautogui.write(&#39;ceduardo.pontes@hotmail.com&#39;) pyautogui.press(&#39;tab&#39;) #para selecionar o email pyautogui.press(&#39;tab&#39;) #Assunto pyautogui.write(&#39;Relatório de Vendas xx-xx-xx&#39;) pyautogui.press(&#39;tab&#39;) #Para ir ao compo do e-mail #Escrever o email - ps. f antes do texto vai deixar o texto dinâmico texto = f&quot;&quot;&quot; Prezados, bom dia A quantidade de unidades vendidas no período de xx-xx-xx foi de {TotalVendido} un. Os produtos mais vendidos foram: {TotalSabores} Att, Carlos Eduardo &quot;&quot;&quot; pyperclip.copy(texto) pyautogui.hotkey(&quot;ctrl&quot;,&quot;v&quot;) pyautogui.click(x=843, y=686)#clicar no botão enviar . time.sleep(5) pyautogui.position() #Procura o local onde deseja saber os ponto x e y e da um clique. Retorne aqui e veja os pontos! .",
-            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/04/15/Automacao-15-04-2022.html",
-            "relUrl": "/fastpages/jupyter/2022/04/15/Automacao-15-04-2022.html",
-            "date": " • Apr 15, 2022"
+            "url": "https://carloseduardopontes.github.io/fastpage/fastpages/jupyter/2022/07/01/Automacao-15-04-2022.html",
+            "relUrl": "/fastpages/jupyter/2022/07/01/Automacao-15-04-2022.html",
+            "date": " • Jul 1, 2022"
         }
         
     
