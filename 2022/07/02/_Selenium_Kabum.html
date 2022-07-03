@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Selenium | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Selenium" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://carloseduardopontes.github.io/fastpage/2022/07/02/_Selenium_Kabum.html" />
+<meta property="og:url" content="https://carloseduardopontes.github.io/fastpage/2022/07/02/_Selenium_Kabum.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-07-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Selenium" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-07-02T00:00:00-05:00","datePublished":"2022-07-02T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Selenium","mainEntityOfPage":{"@type":"WebPage","@id":"https://carloseduardopontes.github.io/fastpage/2022/07/02/_Selenium_Kabum.html"},"url":"https://carloseduardopontes.github.io/fastpage/2022/07/02/_Selenium_Kabum.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://carloseduardopontes.github.io/fastpage/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpage/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpage/about/">About Me</a><a class="page-link" href="/fastpage/search/">Search</a><a class="page-link" href="/fastpage/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Selenium</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-07-02T00:00:00-05:00" itemprop="datePublished">
+        Jul 2, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/CarlosEduardoPontes/fastpage/tree/master/_notebooks/2022-07-01_Selenium_Kabum.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/fastpage/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/CarlosEduardoPontes/fastpage/master?filepath=_notebooks%2F2022-07-01_Selenium_Kabum.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpage/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/CarlosEduardoPontes/fastpage/blob/master/_notebooks/2022-07-01_Selenium_Kabum.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpage/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FCarlosEduardoPontes%2Ffastpage%2Fblob%2Fmaster%2F_notebooks%2F2022-07-01_Selenium_Kabum.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/fastpage/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-07-01_Selenium_Kabum.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://colab.research.google.com/github/CarlosEduardoPontes/fastpage/blob/master/_notebooks/2022-07-01_Selenium_Kabum.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## sudo mv chomedriver /usr/local/bin</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install selenium
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>^C
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="nn">selenium.webdriver.edge.options</span> <span class="kn">import</span> <span class="n">Options</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chrome_options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+<span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--incognito&quot;</span><span class="p">)</span>
+<span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--window-size=1920x1080&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># https://www.selenium.dev/pt-br/documentation/getting_started/installing_browser_drivers/</span>
+
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">chrome_options</span><span class="o">=</span><span class="n">chrome_options</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>&lt;ipython-input-5-1b7304469e66&gt;:4: DeprecationWarning: use options instead of chrome_options
+  driver = webdriver.Chrome(chrome_options=chrome_options)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://www.kabum.com.br/&quot;</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Localizadores-de-Elementos">Localizadores de Elementos<a class="anchor-link" href="#Localizadores-de-Elementos"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Por-id">Por id<a class="anchor-link" href="#Por-id"> </a></h4>
+<pre><code>els = driver.find_elements_by_id(elementId)</code></pre>
+<h4 id="Por-Nome">Por Nome<a class="anchor-link" href="#Por-Nome"> </a></h4>
+<pre><code>els = driver.find_elements_by_name(elementName)</code></pre>
+<h4 id="Por-Classe">Por Classe<a class="anchor-link" href="#Por-Classe"> </a></h4>
+<pre><code>els = driver.find_elements_by_class_name(elementClass)</code></pre>
+<h4 id="Por-Texto-Especifico">Por Texto Especifico<a class="anchor-link" href="#Por-Texto-Especifico"> </a></h4>
+<pre><code>els = driver.find_elements_by_link_text(elementLink)</code></pre>
+<h4 id="Por-Parte-do-Texto">Por Parte do Texto<a class="anchor-link" href="#Por-Parte-do-Texto"> </a></h4>
+<pre><code>els = driver.find_elements_by_partial_link_text(elementpartialLink)</code></pre>
+<h3 id="Por-seletor-css">Por seletor css<a class="anchor-link" href="#Por-seletor-css"> </a></h3><p>Tipos de seletores</p>
+<p>. = Classe</p>
+<p>'#' = id</p>
+<p>Referencias : <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors">https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors</a></p>
+
+<pre><code>els = driver.find_elements_by_css_selector(element_css_selector)</code></pre>
+<h4 id="Por-caminho-Xpath">Por caminho Xpath<a class="anchor-link" href="#Por-caminho-Xpath"> </a></h4>
+<pre><code>els = driver.find_elements_by_xpath(element_x_path)</code></pre>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_search</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s1">&#39;//*[@id=&quot;input-busca&quot;]&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tipos-de-A&#231;&#245;es">Tipos de A&#231;&#245;es<a class="anchor-link" href="#Tipos-de-A&#231;&#245;es"> </a></h2><p>Referencia:
+<a href="https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html">https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html</a></p>
+<p>Principais ações:</p>
+<ul>
+<li><strong>click</strong>  - Envia ação de click ao elemento.</li>
+<li><strong>send_keys</strong> - Envia texto ao elemento de input</li>
+<li><strong>double_click</strong> - Envia duplo click ao elemento.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_search</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s1">&#39;processadores&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">buttom_search</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s1">&#39;//*[@id=&quot;barraBuscaKabum&quot;]/div/form/button&#39;</span><span class="p">)</span>
+<span class="n">buttom_search</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">main_element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s1">&#39;//*[@id=&quot;listing&quot;]/article/section/div[3]/div/main&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">main_element</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;selenium.webdriver.remote.webelement.WebElement (session=&#34;8ade6579c8cb17b1a63db95c532ad9e5&#34;, element=&#34;03b8817e-5c00-48cd-83ba-69b2ba6e4c13&#34;)&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_title</span> <span class="o">=</span> <span class="n">main_element</span><span class="o">.</span><span class="n">find_element_by_css_selector</span><span class="p">(</span><span class="s1">&#39;#listing &gt; article &gt; section &gt; div.sc-cwpsFg.eHWKRV &gt; div &gt; main &gt; div:nth-child(1) &gt; a &gt; div &gt; div.sc-dWINGa.gAQKfg &gt; h2 &gt; span&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_title</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Processador AMD Ryzen 5 5600X, Cache 35MB, 3.7GHz (4.6GHz Max Turbo), AM4, Sem Vídeo - 100-100000065BOX&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_price</span> <span class="o">=</span> <span class="n">main_element</span><span class="o">.</span><span class="n">find_element_by_css_selector</span><span class="p">(</span><span class="s1">&#39;#listing &gt; article &gt; section &gt; div.sc-cwpsFg.eHWKRV &gt; div &gt; main &gt; div:nth-child(1) &gt; a &gt; div &gt; div.sc-GVOUr.eOBSFM.availablePricesCard &gt; span.sc-dwLEzm.bXwgF.priceCard&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_title</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Processador AMD Ryzen 5 5600X, Cache 35MB, 3.7GHz (4.6GHz Max Turbo), AM4, Sem Vídeo - 100-100000065BOX&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_price</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;R$ 1.459,90&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Pegando-todos-os-pre&#231;os-de-uma-Busca">Pegando todos os pre&#231;os de uma Busca<a class="anchor-link" href="#Pegando-todos-os-pre&#231;os-de-uma-Busca"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">title_results</span> <span class="o">=</span> <span class="n">main_element</span><span class="o">.</span><span class="n">find_elements_by_css_selector</span><span class="p">(</span><span class="s1">&#39;.nameCard&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">title_results</span><span class="p">:</span>
+    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Processador AMD Ryzen 5 5600X, Cache 35MB, 3.7GHz (4.6GHz Max Turbo), AM4, Sem Vídeo - 100-100000065BOX&#39;,
+ &#39;Processador AMD Ryzen 5 5600G, 3.9GHz (4.4GHz Max Turbo), AM4, Vídeo Integrado, 6 Núcleos - 100-100000252BOX&#39;,
+ &#39;Processador Intel Core i5-10400, Cache 12MB, 2.9GHz (4.3GHz Max Turbo), LGA 1200 - BX8070110400&#39;,
+ &#39;Processador Intel Core i3-10105, Cache 6MB, 3.7GHz (4.4GHz Max Turbo), LGA 1200 - BX8070110105&#39;,
+ &#39;Processador Intel Core i3-10100F, Cache 6MB, 4.30 GHz, LGA 1200 - BX8070110100F&#39;,
+ &#39;Processador AMD Ryzen 7 5700G, 3.8GHz (4.6GHz Max Turbo), AM4, Vídeo Integrado, 8 Núcleos - 100-100000263BOX&#39;,
+ &#39;Processador AMD Ryzen 7 5800X, Cache 36MB, 3.8GHz (4.7GHz Max Turbo), AM4 - 100-100000063WOF&#39;,
+ &#39;Processador AMD Ryzen 5 3600 Cache 32MB 3.6GHz(4.2GHz Max Turbo) AM4, Sem Vídeo - 100-100000031BOX&#39;,
+ &#39;Processador Intel Core i5-10400F, Cache 12MB, 2.9GHz (4.3GHz Max Turbo), LGA 1200 - BX8070110400F&#39;,
+ &#39;Processador Intel Core i7-10700F, Cache 16MB, 2.9GHz (4.8GHz Max Turbo), LGA 1200 - BX8070110700F&#39;,
+ &#39;Processador AMD Ryzen 9 5900X, Cache 70MB, 3.7GHz (4.8GHz Max Turbo), AM4 - 100-100000061WOF&#39;,
+ &#39;Processador Intel Core i7-9700KF Coffee Lake Refresh, Cache 12MB, 3.6GHz (4.9GHz Max Turbo), LGA 1151, Sem Vídeo - BX80684I79700KF&#39;,
+ &#39;Processador Intel Core i5-11400 11ª Geração, Cache 12MB, 2.6 GHz (4.4GHz Turbo), LGA1200 - BX8070811400&#39;,
+ &#39;Processador Intel Core i7-12700K, Cache 25MB, 3.6GHz (5.0GHz Max Turbo), LGA 1700 - BX8071512700K&#39;,
+ &#39;Processador Intel Pentium Gold G6400 Processor, Cache 4MB, 4.00 GHz - BX80701G6400&#39;,
+ &#39;Processador Intel Core i3-12100F, Cache 12MB, 3.3GHz (4.3GHz Max Turbo), LGA 1700 - BX8071512100F&#39;,
+ &#39;Processador Intel Core i3-10100, Cache 6MB, 3.6GHz (4.3GHz Max Turbo), LGA 1200 - BX8070110100&#39;,
+ &#39;Processador Intel Core i5-12400, Cache 18MB, 2.5GHz (4.4GHz Max Turbo), LGA 1700 - BX8071512400&#39;,
+ &#39;Processador AMD Ryzen 9 5950X, Cache 72MB, 3.4GHz (4.9GHz Max Turbo), AM4 - 100-100000059WOF&#39;,
+ &#39;Processador Intel Core i5-12600K, Cache 20MB, 3.7GHz (4.9GHz Max Turbo), LGA 1700 - BX8071512600K&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">title</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">title_results</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># product_list = []</span>
+<span class="c1"># for el in title_results:</span>
+<span class="c1">#     product_list.append(el.text)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">price_results</span> <span class="o">=</span> <span class="n">main_element</span><span class="o">.</span><span class="n">find_elements_by_css_selector</span><span class="p">(</span><span class="s1">&#39;.priceCard&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">price_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">el</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">price_results</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">ConnectionRefusedError</span>                    Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connection.py</span> in <span class="ansi-cyan-fg">_new_conn</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    168</span>         <span class="ansi-green-intense-fg ansi-bold">try</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 169</span><span class="ansi-yellow-intense-fg ansi-bold">             conn = connection.create_connection(
+</span><span class="ansi-green-fg">    170</span>                 <span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_dns_host<span class="ansi-yellow-intense-fg ansi-bold">,</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>port<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>timeout<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>extra_kw
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\util\connection.py</span> in <span class="ansi-cyan-fg">create_connection</span><span class="ansi-blue-intense-fg ansi-bold">(address, timeout, source_address, socket_options)</span>
+<span class="ansi-green-fg">     95</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> err <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">not</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 96</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">raise</span> err
+<span class="ansi-green-fg">     97</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\util\connection.py</span> in <span class="ansi-cyan-fg">create_connection</span><span class="ansi-blue-intense-fg ansi-bold">(address, timeout, source_address, socket_options)</span>
+<span class="ansi-green-fg">     85</span>                 sock<span class="ansi-yellow-intense-fg ansi-bold">.</span>bind<span class="ansi-yellow-intense-fg ansi-bold">(</span>source_address<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 86</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>sock<span class="ansi-yellow-intense-fg ansi-bold">.</span>connect<span class="ansi-yellow-intense-fg ansi-bold">(</span>sa<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     87</span>             <span class="ansi-green-intense-fg ansi-bold">return</span> sock
+
+<span class="ansi-red-intense-fg ansi-bold">ConnectionRefusedError</span>: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-intense-fg ansi-bold">NewConnectionError</span>                        Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py</span> in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-fg">    698</span>             <span class="ansi-red-intense-fg ansi-bold"># Make the request on the httplib connection object.</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 699</span><span class="ansi-yellow-intense-fg ansi-bold">             httplib_response = self._make_request(
+</span><span class="ansi-green-fg">    700</span>                 conn<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py</span> in <span class="ansi-cyan-fg">_make_request</span><span class="ansi-blue-intense-fg ansi-bold">(self, conn, method, url, timeout, chunked, **httplib_request_kw)</span>
+<span class="ansi-green-fg">    393</span>             <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 394</span><span class="ansi-yellow-intense-fg ansi-bold">                 </span>conn<span class="ansi-yellow-intense-fg ansi-bold">.</span>request<span class="ansi-yellow-intense-fg ansi-bold">(</span>method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>httplib_request_kw<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    395</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connection.py</span> in <span class="ansi-cyan-fg">request</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers)</span>
+<span class="ansi-green-fg">    233</span>             headers<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#34;User-Agent&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> _get_default_user_agent<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 234</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>super<span class="ansi-yellow-intense-fg ansi-bold">(</span>HTTPConnection<span class="ansi-yellow-intense-fg ansi-bold">,</span> self<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>request<span class="ansi-yellow-intense-fg ansi-bold">(</span>method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> body<span class="ansi-yellow-intense-fg ansi-bold">=</span>body<span class="ansi-yellow-intense-fg ansi-bold">,</span> headers<span class="ansi-yellow-intense-fg ansi-bold">=</span>headers<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    235</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\http\client.py</span> in <span class="ansi-cyan-fg">request</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers, encode_chunked)</span>
+<span class="ansi-green-fg">   1254</span>         <span class="ansi-blue-intense-fg ansi-bold">&#34;&#34;&#34;Send a complete request to the server.&#34;&#34;&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1255</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_send_request<span class="ansi-yellow-intense-fg ansi-bold">(</span>method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> body<span class="ansi-yellow-intense-fg ansi-bold">,</span> headers<span class="ansi-yellow-intense-fg ansi-bold">,</span> encode_chunked<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   1256</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\http\client.py</span> in <span class="ansi-cyan-fg">_send_request</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers, encode_chunked)</span>
+<span class="ansi-green-fg">   1300</span>             body <span class="ansi-yellow-intense-fg ansi-bold">=</span> _encode<span class="ansi-yellow-intense-fg ansi-bold">(</span>body<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;body&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1301</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>endheaders<span class="ansi-yellow-intense-fg ansi-bold">(</span>body<span class="ansi-yellow-intense-fg ansi-bold">,</span> encode_chunked<span class="ansi-yellow-intense-fg ansi-bold">=</span>encode_chunked<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   1302</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\http\client.py</span> in <span class="ansi-cyan-fg">endheaders</span><span class="ansi-blue-intense-fg ansi-bold">(self, message_body, encode_chunked)</span>
+<span class="ansi-green-fg">   1249</span>             <span class="ansi-green-intense-fg ansi-bold">raise</span> CannotSendHeader<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1250</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_send_output<span class="ansi-yellow-intense-fg ansi-bold">(</span>message_body<span class="ansi-yellow-intense-fg ansi-bold">,</span> encode_chunked<span class="ansi-yellow-intense-fg ansi-bold">=</span>encode_chunked<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   1251</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\http\client.py</span> in <span class="ansi-cyan-fg">_send_output</span><span class="ansi-blue-intense-fg ansi-bold">(self, message_body, encode_chunked)</span>
+<span class="ansi-green-fg">   1009</span>         <span class="ansi-green-intense-fg ansi-bold">del</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_buffer<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-yellow-intense-fg ansi-bold">:</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1010</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>send<span class="ansi-yellow-intense-fg ansi-bold">(</span>msg<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   1011</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\http\client.py</span> in <span class="ansi-cyan-fg">send</span><span class="ansi-blue-intense-fg ansi-bold">(self, data)</span>
+<span class="ansi-green-fg">    949</span>             <span class="ansi-green-intense-fg ansi-bold">if</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>auto_open<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 950</span><span class="ansi-yellow-intense-fg ansi-bold">                 </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>connect<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    951</span>             <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connection.py</span> in <span class="ansi-cyan-fg">connect</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    199</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> connect<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 200</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>conn <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_new_conn<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    201</span>         self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_prepare_conn<span class="ansi-yellow-intense-fg ansi-bold">(</span>conn<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connection.py</span> in <span class="ansi-cyan-fg">_new_conn</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    180</span>         <span class="ansi-green-intense-fg ansi-bold">except</span> SocketError <span class="ansi-green-intense-fg ansi-bold">as</span> e<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 181</span><span class="ansi-yellow-intense-fg ansi-bold">             raise NewConnectionError(
+</span><span class="ansi-green-fg">    182</span>                 self<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#34;Failed to establish a new connection: %s&#34;</span> <span class="ansi-yellow-intense-fg ansi-bold">%</span> e
+
+<span class="ansi-red-intense-fg ansi-bold">NewConnectionError</span>: &lt;urllib3.connection.HTTPConnection object at 0x0000018F10FE58E0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-intense-fg ansi-bold">MaxRetryError</span>                             Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-60-5b4cbcee4215&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>price_list <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span>el<span class="ansi-yellow-intense-fg ansi-bold">.</span>text <span class="ansi-green-intense-fg ansi-bold">for</span> el <span class="ansi-green-intense-fg ansi-bold">in</span> price_results<span class="ansi-yellow-intense-fg ansi-bold">]</span>
+
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-60-5b4cbcee4215&gt;</span> in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-intense-fg ansi-bold">(.0)</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>price_list <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span>el<span class="ansi-yellow-intense-fg ansi-bold">.</span>text <span class="ansi-green-intense-fg ansi-bold">for</span> el <span class="ansi-green-intense-fg ansi-bold">in</span> price_results<span class="ansi-yellow-intense-fg ansi-bold">]</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webelement.py</span> in <span class="ansi-cyan-fg">text</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">     74</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> text<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">     75</span>         <span class="ansi-blue-intense-fg ansi-bold">&#34;&#34;&#34;The text of the element.&#34;&#34;&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 76</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_execute<span class="ansi-yellow-intense-fg ansi-bold">(</span>Command<span class="ansi-yellow-intense-fg ansi-bold">.</span>GET_ELEMENT_TEXT<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;value&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
+<span class="ansi-green-fg">     77</span> 
+<span class="ansi-green-fg">     78</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> click<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webelement.py</span> in <span class="ansi-cyan-fg">_execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, command, params)</span>
+<span class="ansi-green-fg">    631</span>             params <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">{</span><span class="ansi-yellow-intense-fg ansi-bold">}</span>
+<span class="ansi-green-fg">    632</span>         params<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;id&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_id
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 633</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_parent<span class="ansi-yellow-intense-fg ansi-bold">.</span>execute<span class="ansi-yellow-intense-fg ansi-bold">(</span>command<span class="ansi-yellow-intense-fg ansi-bold">,</span> params<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    634</span> 
+<span class="ansi-green-fg">    635</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> find_element<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> by<span class="ansi-yellow-intense-fg ansi-bold">=</span>By<span class="ansi-yellow-intense-fg ansi-bold">.</span>ID<span class="ansi-yellow-intense-fg ansi-bold">,</span> value<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py</span> in <span class="ansi-cyan-fg">execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, driver_command, params)</span>
+<span class="ansi-green-fg">    317</span> 
+<span class="ansi-green-fg">    318</span>         params <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_wrap_value<span class="ansi-yellow-intense-fg ansi-bold">(</span>params<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 319</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>response <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>command_executor<span class="ansi-yellow-intense-fg ansi-bold">.</span>execute<span class="ansi-yellow-intense-fg ansi-bold">(</span>driver_command<span class="ansi-yellow-intense-fg ansi-bold">,</span> params<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    320</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> response<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    321</span>             self<span class="ansi-yellow-intense-fg ansi-bold">.</span>error_handler<span class="ansi-yellow-intense-fg ansi-bold">.</span>check_response<span class="ansi-yellow-intense-fg ansi-bold">(</span>response<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\remote_connection.py</span> in <span class="ansi-cyan-fg">execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, command, params)</span>
+<span class="ansi-green-fg">    372</span>         data <span class="ansi-yellow-intense-fg ansi-bold">=</span> utils<span class="ansi-yellow-intense-fg ansi-bold">.</span>dump_json<span class="ansi-yellow-intense-fg ansi-bold">(</span>params<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    373</span>         url <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;%s%s&#39;</span> <span class="ansi-yellow-intense-fg ansi-bold">%</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_url<span class="ansi-yellow-intense-fg ansi-bold">,</span> path<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 374</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_request<span class="ansi-yellow-intense-fg ansi-bold">(</span>command_info<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> body<span class="ansi-yellow-intense-fg ansi-bold">=</span>data<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    375</span> 
+<span class="ansi-green-fg">    376</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> _request<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> body<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\remote_connection.py</span> in <span class="ansi-cyan-fg">_request</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body)</span>
+<span class="ansi-green-fg">    395</span> 
+<span class="ansi-green-fg">    396</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>keep_alive<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 397</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>resp <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_conn<span class="ansi-yellow-intense-fg ansi-bold">.</span>request<span class="ansi-yellow-intense-fg ansi-bold">(</span>method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> body<span class="ansi-yellow-intense-fg ansi-bold">=</span>body<span class="ansi-yellow-intense-fg ansi-bold">,</span> headers<span class="ansi-yellow-intense-fg ansi-bold">=</span>headers<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    398</span> 
+<span class="ansi-green-fg">    399</span>             statuscode <span class="ansi-yellow-intense-fg ansi-bold">=</span> resp<span class="ansi-yellow-intense-fg ansi-bold">.</span>status
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\request.py</span> in <span class="ansi-cyan-fg">request</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, fields, headers, **urlopen_kw)</span>
+<span class="ansi-green-fg">     72</span> 
+<span class="ansi-green-fg">     73</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> method <span class="ansi-green-intense-fg ansi-bold">in</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_encode_url_methods<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 74</span><span class="ansi-yellow-intense-fg ansi-bold">             return self.request_encode_url(
+</span><span class="ansi-green-fg">     75</span>                 method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> fields<span class="ansi-yellow-intense-fg ansi-bold">=</span>fields<span class="ansi-yellow-intense-fg ansi-bold">,</span> headers<span class="ansi-yellow-intense-fg ansi-bold">=</span>headers<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>urlopen_kw
+<span class="ansi-green-fg">     76</span>             )
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\request.py</span> in <span class="ansi-cyan-fg">request_encode_url</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, fields, headers, **urlopen_kw)</span>
+<span class="ansi-green-fg">     94</span>             url <span class="ansi-yellow-intense-fg ansi-bold">+=</span> <span class="ansi-blue-intense-fg ansi-bold">&#34;?&#34;</span> <span class="ansi-yellow-intense-fg ansi-bold">+</span> urlencode<span class="ansi-yellow-intense-fg ansi-bold">(</span>fields<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     95</span> 
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 96</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>urlopen<span class="ansi-yellow-intense-fg ansi-bold">(</span>method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>extra_kw<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     97</span> 
+<span class="ansi-green-fg">     98</span>     def request_encode_body(
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\poolmanager.py</span> in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, redirect, **kw)</span>
+<span class="ansi-green-fg">    373</span>             response <span class="ansi-yellow-intense-fg ansi-bold">=</span> conn<span class="ansi-yellow-intense-fg ansi-bold">.</span>urlopen<span class="ansi-yellow-intense-fg ansi-bold">(</span>method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kw<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    374</span>         <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 375</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>response <span class="ansi-yellow-intense-fg ansi-bold">=</span> conn<span class="ansi-yellow-intense-fg ansi-bold">.</span>urlopen<span class="ansi-yellow-intense-fg ansi-bold">(</span>method<span class="ansi-yellow-intense-fg ansi-bold">,</span> u<span class="ansi-yellow-intense-fg ansi-bold">.</span>request_uri<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kw<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    376</span> 
+<span class="ansi-green-fg">    377</span>         redirect_location <span class="ansi-yellow-intense-fg ansi-bold">=</span> redirect <span class="ansi-green-intense-fg ansi-bold">and</span> response<span class="ansi-yellow-intense-fg ansi-bold">.</span>get_redirect_location<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py</span> in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-fg">    781</span>                 <span class="ansi-blue-intense-fg ansi-bold">&#34;Retrying (%r) after connection broken by &#39;%r&#39;: %s&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> retries<span class="ansi-yellow-intense-fg ansi-bold">,</span> err<span class="ansi-yellow-intense-fg ansi-bold">,</span> url
+<span class="ansi-green-fg">    782</span>             )
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 783</span><span class="ansi-yellow-intense-fg ansi-bold">             return self.urlopen(
+</span><span class="ansi-green-fg">    784</span>                 method<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">    785</span>                 url<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py</span> in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-fg">    781</span>                 <span class="ansi-blue-intense-fg ansi-bold">&#34;Retrying (%r) after connection broken by &#39;%r&#39;: %s&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> retries<span class="ansi-yellow-intense-fg ansi-bold">,</span> err<span class="ansi-yellow-intense-fg ansi-bold">,</span> url
+<span class="ansi-green-fg">    782</span>             )
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 783</span><span class="ansi-yellow-intense-fg ansi-bold">             return self.urlopen(
+</span><span class="ansi-green-fg">    784</span>                 method<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">    785</span>                 url<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py</span> in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-fg">    781</span>                 <span class="ansi-blue-intense-fg ansi-bold">&#34;Retrying (%r) after connection broken by &#39;%r&#39;: %s&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> retries<span class="ansi-yellow-intense-fg ansi-bold">,</span> err<span class="ansi-yellow-intense-fg ansi-bold">,</span> url
+<span class="ansi-green-fg">    782</span>             )
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 783</span><span class="ansi-yellow-intense-fg ansi-bold">             return self.urlopen(
+</span><span class="ansi-green-fg">    784</span>                 method<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">    785</span>                 url<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py</span> in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-fg">    753</span>                 e <span class="ansi-yellow-intense-fg ansi-bold">=</span> ProtocolError<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;Connection aborted.&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> e<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    754</span> 
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 755</span><span class="ansi-yellow-intense-fg ansi-bold">             retries = retries.increment(
+</span><span class="ansi-green-fg">    756</span>                 method<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> error<span class="ansi-yellow-intense-fg ansi-bold">=</span>e<span class="ansi-yellow-intense-fg ansi-bold">,</span> _pool<span class="ansi-yellow-intense-fg ansi-bold">=</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> _stacktrace<span class="ansi-yellow-intense-fg ansi-bold">=</span>sys<span class="ansi-yellow-intense-fg ansi-bold">.</span>exc_info<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">2</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
+<span class="ansi-green-fg">    757</span>             )
+
+<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\urllib3\util\retry.py</span> in <span class="ansi-cyan-fg">increment</span><span class="ansi-blue-intense-fg ansi-bold">(self, method, url, response, error, _pool, _stacktrace)</span>
+<span class="ansi-green-fg">    572</span> 
+<span class="ansi-green-fg">    573</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> new_retry<span class="ansi-yellow-intense-fg ansi-bold">.</span>is_exhausted<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 574</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">raise</span> MaxRetryError<span class="ansi-yellow-intense-fg ansi-bold">(</span>_pool<span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> error <span class="ansi-green-intense-fg ansi-bold">or</span> ResponseError<span class="ansi-yellow-intense-fg ansi-bold">(</span>cause<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    575</span> 
+<span class="ansi-green-fg">    576</span>         log<span class="ansi-yellow-intense-fg ansi-bold">.</span>debug<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;Incremented Retry for (url=&#39;%s&#39;): %r&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> url<span class="ansi-yellow-intense-fg ansi-bold">,</span> new_retry<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">MaxRetryError</span>: HTTPConnectionPool(host=&#39;127.0.0.1&#39;, port=54735): Max retries exceeded with url: /session/8ade6579c8cb17b1a63db95c532ad9e5/element/b187cc0e-9836-4e43-a0d0-7348a24613ed/text (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x0000018F10FE58E0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente&#39;))</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;produto&#39;</span><span class="p">:</span><span class="n">product_list</span><span class="p">,</span> <span class="s1">&#39;preco&#39;</span><span class="p">:</span><span class="n">price_list</span><span class="p">})</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;../07-04-22.csv&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exercicios:">Exercicios:<a class="anchor-link" href="#Exercicios:"> </a></h2><p>Praticar conceitos realizando Scrapping de Vagas Linkedin.</p>
+<p>link a ser utilizado: <a href="https://br.linkedin.com/jobs/ci%C3%AAncia-de-dados-vagas?position=1&amp;pageNum=0">https://br.linkedin.com/jobs/ci%C3%AAncia-de-dados-vagas?position=1&amp;pageNum=0</a></p>
+<p>Colete o Titulo e Descrição das vagas em Ciencia de Dados, o seletor de elementos fica a seu critério.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/fastpage/2022/07/02/_Selenium_Kabum.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpage/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpage/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpage/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/fastpage/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/fastpage/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
